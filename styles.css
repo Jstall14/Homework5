@@ -10,7 +10,7 @@
     border: 10px solid #31393c;
 }
 
-.main-content {  
+.main-content { 
     font-size: 2rem;
     grid-area: main;
     overflow-y: auto;
@@ -40,17 +40,23 @@ h2 {
     color:#3e96f4
 }
 
+.skillbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+}
+
 #skills {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 100px);
-    max-width: 200px;
-    /* background-color: #ccc7bf; */
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 200px);
     gap: 100px;
     border: 0px;
 }
 
 .skill {
+    max-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,41 +65,12 @@ h2 {
     background-color: #ccc7bf;
 }
 
-/*
-#skills {
-    display: flex;
-    flex-direction: column;
-    background-color: #ccc7bf;
-    border-radius: 30%;
-    width: 400px;
-    height: auto;
-    margin: 40px auto;
-    padding: 20px;
-    transition: transform 0.5s ease;
+.skill1 {
+    max-width: 800px;
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
 
-#skills:hover {
-    transform: scale(1.05) rotate(2deg);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-#skills ul li {
-    font-size: 1.5rem;
-    margin: 10px 0;
-    padding: 10px;
-    background-color: #edeeeb;
-    border-radius: 15px;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-#skills ul li:hover {
-    transform: scale(1.2) rotate(-5deg);
-    background-color: #3e96f4;
-    color: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    cursor: pointer;
-}
-*/
 #projects {
     border: 0px;
 }
@@ -155,7 +132,7 @@ h2 {
 .sidebar ul {
     display: flex;
     flex-direction: column;
-    justify-content: space-around !important;
+    justify-content: space-around;
     list-style-type: none;
     padding: 0;
     gap: 3em;
@@ -164,7 +141,7 @@ h2 {
 .sidebar ul li a {
     display: flex;
     flex-direction: column;
-    justify-content: space-around !important;
+    justify-content: space-around;
     flex-grow: 3;
     text-decoration: none;
     font-size: 2rem;
